@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}
+    Hello
+{% endblock %}
+{% block headline %}
+    Hello,
+    {% for name in base %}
+        <a>
+            {{ name + "\n" }}
+            
+        </a>
+    {% endfor %}
+{% endblock %}
+{% block body %}
+{% endblock %}
